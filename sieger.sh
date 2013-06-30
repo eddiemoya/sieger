@@ -33,7 +33,6 @@ echo "$space";
 echo "** \t\t** PATH GROUP COUNT: $count **";
 echo "$space";
 
-count=1;
 count=$(expr $count - 1);
 for (( $count; count>=0 ; count--)); do
 
