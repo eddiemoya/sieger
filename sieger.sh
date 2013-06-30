@@ -1,7 +1,7 @@
 #!/bin/sh
 
 function json_value  {
-  local __json_string=$1;
+  	local __json_string=$1;
 	local __json_key=$2
 	value=$( echo "$__json_string" | jsawk -q "$__json_key"| cut -d "|" -f 2 | cut -d '"' -f 2);
 	echo "$value"
@@ -52,12 +52,12 @@ for (( $count; count>=0 ; count--)); do
 	echo "**"
 	echo "** MESSAGE........$message";
 	echo "** PATH...........$filepath";
-    echo "** TIME...........$siegetime";
-    echo "** CONCURRANCE....$concurrance";
-    echo "** REPEATS........$repeat";
-    echo "**"
-    echo "$space";
-    echo "$space";
+ 	echo "** TIME...........$siegetime";
+    	echo "** CONCURRANCE....$concurrance";
+    	echo "** REPEATS........$repeat";
+    	echo "**"
+    	echo "$space";
+    	echo "$space";
 	
 	for (( $repeat; repeat>=0 ; repeat--)); do
 		if [[ $1 == "-test" ]] ; then
