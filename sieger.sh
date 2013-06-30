@@ -59,7 +59,7 @@ for (( $count; count>=0 ; count--)); do
     	echo "$space";
 	
 	for (( $repeat; repeat>=0 ; repeat--)); do
-		if [[ $1 == "-test" ]] ; then
+		if [[ $1 == "--test" ]] ; then
 			echo "$filepath, $message $siegetime, $concurrance";
 		else
 			siege -c "$concurrance" -t "$siegetime" -f "$filepath" -m "$message"
